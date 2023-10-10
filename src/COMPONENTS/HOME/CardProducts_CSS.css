@@ -1,0 +1,167 @@
+.product{
+background-color: rgb(252, 251, 251);
+width: 100%;
+max-width: 320px;
+border: 3px solid rgba(37, 36, 36, 0.667);
+transition: transform 200ms ease;
+
+border-radius: .8em;
+}
+
+.product:hover{
+transform: scale(1.03);
+
+}
+
+.product__header{
+border-bottom: 3px solid #cca;
+padding: 1.3em;
+width: 100%;
+aspect-ratio: 1.5;
+position: relative;
+}
+
+.product__img{
+width: 80%;
+height: 80%;
+object-fit:contain;/*ajuste dentro de su contenedor manteniendo la proporción de aspecto original y sin recortar */
+position: absolute; 
+top: 50%;
+left: 50%;
+transform:translate( -50% , -50%);
+transition: opacity 200ms ;
+}
+
+.product__img-1{
+    opacity:1;
+}
+
+.product__img-2{
+    opacity:0;
+}
+
+.product__header:hover .product__img-1{
+    opacity:0;
+}
+
+.product__header:hover .product__img-2{
+    opacity:1;
+    cursor: pointer;
+}
+
+.product__img-2{
+    cursor: pointer;
+}
+
+.product__body{
+  padding:1em 1em 0em;
+  position:relative;
+}
+
+
+.product__section{
+    margin-bottom: 1em;
+    
+
+}
+
+
+.product__subtitle{
+    font-size: .9 rem;
+    font-weight: 700;
+    margin-bottom: .3em; 
+    color: gray;
+
+
+}
+
+
+.product__title{
+    font-size: 1 rem;
+    font-weight: 700;
+    
+
+}
+
+
+.product__price{
+display: flex;
+flex-direction: column;
+}
+
+
+.product__price-label{
+color: gray;
+font-weight: 700;
+font-size: 0.9rem;
+
+}
+
+
+.product__price-value{
+
+    font-weight: 700;
+}
+
+.product__price-value::before{
+
+    font-weight: 700;
+    content: '$ ';
+}
+
+
+.product__btn{
+color: white;
+background-color: red;
+width: 40px;
+aspect-ratio: 1;
+border-radius: 50%;
+border: 0px solid rgba(37, 36, 36, 0.667);
+position: absolute;
+right: 2em;
+bottom: 1.5em;
+font-size: 1.2rem;
+position: relative; 
+top: 50%;
+left: 80%;
+cursor: pointer;
+}
+
+.icon-1{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    opacity:1;
+}
+
+.icon-2{
+    position: absolute;
+    top: 25%;
+    left: 25%; 
+    opacity:0;
+}
+.product:hover .icon-1{
+    opacity:0;
+}
+
+.product:hover .icon-2{
+    opacity:1;
+}
+
+
+.product__btn:hover{
+   filter: brightness(1.2);
+ 
+    }
+    
+    .product:hover .product__btn {
+        transform: scale(1.03);
+        animation: brillobtn 1.5s linear infinite;
+        }   
+    
+@keyframes brillobtn{
+    0%{box-shadow: 0 0 0 0px rgba(251, 248, 248, 0.8);}
+   50%{box-shadow: 0 0 0 5px rgba(246, 4, 4, 0.5)} 
+  100%{box-shadow: 0 0 0 8px rgba(255, 0, 0, 0)}
+   
+}
