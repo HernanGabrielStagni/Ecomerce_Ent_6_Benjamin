@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom'
 
 
 const CardProducts = ({product}) => {
-  // const ProductsGlobal = useSelector(product => product)
- console.log(product)
+ 
+
 
  const navigate=useNavigate()
 //******************************* */
 const handleSelecProduct= () => {
-console.log('hernan')
+
 navigate (`/product/${product.id}`)
 }
 //********************************** */

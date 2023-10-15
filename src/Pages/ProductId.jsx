@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../HOOKS/useFetch'
+import ProductIdInfo from '../COMPONENTS/PRODUCTID/ProductIdInfo'
+import SliderImgs from '../COMPONENTS/PRODUCTID/SliderImgs'
 
 const ProductId = () => {
 
@@ -13,10 +15,14 @@ const ProductId = () => {
 
     },[])
 
-    console.log(product)
+  
 
   return (
     <div>
+      {/* <h1>hola ${id}</h1> */}
+      <SliderImgs product={product}/>
+      <ProductIdInfo product={product}/>
+
 
     </div>
   )
