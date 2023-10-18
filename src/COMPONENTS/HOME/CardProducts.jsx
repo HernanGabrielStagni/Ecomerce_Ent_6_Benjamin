@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 const CardProducts = ({product}) => {
- 
+ console.log(product)
 
 
  const navigate=useNavigate()

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
+import './ProductIdInfo_CSS.css'
+import SimilarProducts from "./SimilarProducts";
 const ProductIdInfo = ({ product }) => {
-console.log(product)
+//console.log(product)
 
   const [quantity, setQuantity] = useState(1);
 
@@ -17,9 +18,9 @@ console.log(product)
 
   return (
     <section>
-      <h3>{product?.brand}</h3>
-      <h2>{product?.title}</h2>
-      <p>{product?.description}</p>
+      <h3 className="product__brand">{product?.brand}</h3>
+      <h2 className="product__title">{product?.title}</h2>
+      <p className="product__description">{product?.description}</p>
 
       <footer>
         <div>
@@ -41,6 +42,7 @@ console.log(product)
           </button>
         </div>
       </footer>
+     
     </section>
   );
 };

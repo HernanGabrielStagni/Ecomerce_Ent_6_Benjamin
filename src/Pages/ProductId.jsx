@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import useFetch from '../HOOKS/useFetch'
 import ProductIdInfo from '../COMPONENTS/PRODUCTID/ProductIdInfo'
 import SliderImgs from '../COMPONENTS/PRODUCTID/SliderImgs'
+import SimilarProducts from '../COMPONENTS/PRODUCTID/SimilarProducts'
 
 const ProductId = () => {
 
@@ -22,6 +23,8 @@ const ProductId = () => {
       {/* <h1>hola ${id}</h1> */}
       <SliderImgs product={product}/>
       <ProductIdInfo product={product}/>
+    <SimilarProducts categoryId={product?.categoryId}/> 
+  
 
 
     </div>
