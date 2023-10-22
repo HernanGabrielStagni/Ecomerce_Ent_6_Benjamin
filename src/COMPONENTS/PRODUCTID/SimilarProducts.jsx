@@ -11,7 +11,7 @@ const SimilarProducts = ({categoryId, currentId}) => {
     // console.log('current__'+currentId+'cat '+categoryId)
 
   return (
-    <div card__similarProducts>
+    <div className='card__similarProducts'>
         {
         productsGlobal?.map( prod =>{
            if ( prod.categoryId === categoryId && prod.id != currentId ){
