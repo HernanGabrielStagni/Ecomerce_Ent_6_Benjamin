@@ -2,15 +2,19 @@
 .container_gral{
 background-color: red;
 padding: 1em;
+height: 100%;
 
 }
 
 .container_info{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: aqua;
     padding: 1em;
     gap: 1em;
+    height: 100%;
+
 }
 
 .product__brand{
