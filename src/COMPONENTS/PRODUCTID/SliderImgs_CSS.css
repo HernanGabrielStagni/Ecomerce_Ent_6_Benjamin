@@ -3,7 +3,7 @@ background-color: rgb(221, 151, 151);
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 2em;
+padding: 0em;
 width: 100%;
 min-width: 280px;
 height: 50vh;
@@ -12,7 +12,7 @@ height: 50vh;
 
 
 .container_imgId img{
-    width: 50%;
+    width: 100%;
 
 }
 .slider{
