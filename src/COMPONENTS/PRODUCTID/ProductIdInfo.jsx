@@ -19,14 +19,15 @@ const ProductIdInfo = ({ product }) => {
   return (
     <section className="container_gral">
      <article className="container_info">
+
       <h3 className="product__brand">{product?.brand}</h3>
       <h2 className="product__title">{product?.title}</h2>
       <p className="product__description">{product?.description}</p>
 
-      <div className="price__title-value">
-        <div className="price">
-          <span>Price : $ </span>
-          <span>{product?.price}</span>
+      <div className="container__price-quantity">
+        <div className="price-value">
+          <span>Price : </span>
+          <span> $ {product?.price}</span>
         </div>
 
           <div className="quantyti__count">
