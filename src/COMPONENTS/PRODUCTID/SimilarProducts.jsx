@@ -2,25 +2,27 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { setProductsGlobal } from '../../store/slices/products.slice'
 import CardProducts from '../HOME/CardProducts'
+import '../PRODUCTID/SimilarProducts_CSS.css'
 
 
-
-const SimilarProducts = ({categoryId}) => {
+const SimilarProducts = ({categoryId, currentId}) => {
     const { productsGlobal }=useSelector(state => state)
     // console.log(productsGlobal)
-    console.log('cat'+categoryId)
+    // console.log('current__'+currentId+'cat '+categoryId)
 
   return (
-    <div>
+    <div card__similarProducts>
         {
         productsGlobal?.map( prod =>{
-           if ( prod.categoryId === categoryId){
+           if ( prod.categoryId === categoryId && prod.id != currentId ){
            return (
-            // <h3>categoryId</h3>
+            <>
+            <h3>{prod.id}__{currentId}</h3>
            <CardProducts 
            key={prod.id}
            product={prod}
-            />
+           />
+            </>
            )
         }
         

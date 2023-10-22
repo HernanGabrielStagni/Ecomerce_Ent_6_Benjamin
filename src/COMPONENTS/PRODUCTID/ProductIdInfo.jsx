@@ -17,31 +17,34 @@ const ProductIdInfo = ({ product }) => {
   };
 
   return (
-    <section>
+    <section className="container_gral">
+     <article className="container_info">
       <h3 className="product__brand">{product?.brand}</h3>
       <h2 className="product__title">{product?.title}</h2>
       <p className="product__description">{product?.description}</p>
 
-      <footer>
-        <div>
+      <div className="price__title-value">
+        <div className="price">
           <span>Price : $ </span>
           <span>{product?.price}</span>
         </div>
 
-        <div>
-          {" "}
-          {/* cantidad y botones + y - */}
-          <span> Quantity</span>
-          <div>
-            <button onClick={handleMinus}> - </button>
-            <span>{quantity}</span>
-            <button onClick={handleAdd}> + </button>
-          </div>
-          <button>
+          <div className="quantyti__count">
+              <span> Quantity</span>
+          
+              <div className="container__button"> {/* div del contadoor */}
+                <button className="button__count" onClick={handleMinus}> - </button>
+                <span>{quantity}</span>
+                <button className="button__count" onClick={handleAdd}> + </button>
+              </div>
+         </div>
+      </div>
+         
+          <button className="button__cart">
             add to cart <i className="bx bx-cart"></i>
           </button>
-        </div>
-      </footer>
+        
+          </article>
      
     </section>
   );
