@@ -8,12 +8,13 @@ import "../Pages/ProductId_CSS.css";
 
 const ProductId = () => {
   const { id } = useParams();
+
   const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products/${id}`;
   const [product, getProductById] = useFetch(url);
 
   useEffect(() => {
     getProductById();
-  }, []);
+  }, [id]);
 
   return (
     <section className="container__productId">

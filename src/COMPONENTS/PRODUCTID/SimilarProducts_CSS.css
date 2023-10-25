@@ -1,4 +1,6 @@
 .card__similarProducts{
-    background-color: red;
+    background-color: rgb(244, 197, 197);
     padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -20,7 +20,7 @@ const ProductIdInfo = ({ product }) => {
     <section className="container_gral">
      <article className="container_info">
 
-      <h3 className="product__brand">{product?.brand}</h3>
+      <h3 className="product__brand">{product?.brand}__ID: {product?.id} </h3>
       <h2 className="product__title">{product?.title}</h2>
       <p className="product__description">{product?.description}</p>
 
