@@ -5,9 +5,8 @@ const SliderImgs = ({product}) => {
     // console.log(product)
 
   return (
-    <div className='container_imgId'>
-        <img src={product?.images[2].url} alt="" />
-    </div>
+ 
+        <img  className='img' src={product?.images[2].url} alt="" />
   )
 }
 

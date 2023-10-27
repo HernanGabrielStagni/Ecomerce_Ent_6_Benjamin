@@ -12,14 +12,14 @@ const SimilarProducts = ({categoryId, currentId}) => {
 
   return (
     <div className='card__similarProducts'>
-      <h2> Similar Products</h2>
+  
         {
         productsGlobal?.map( prod =>{
            if ( prod.categoryId === categoryId && prod.id != currentId ){
            return (
             <>
             {/* <h3>{prod.id}__actual{currentId}</h3> */}
-            <h3>id={prod.id}</h3>
+            {/* <h3>id={prod.id}</h3> */}
            <CardProducts 
            key={prod.id}
            product={prod}

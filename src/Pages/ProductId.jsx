@@ -21,22 +21,26 @@ const ProductId = () => {
       <article className="productId__header">
         
         <div className="slider">
-          <SliderImgs className="productId__img" product={product} />
+          {/* <SliderImgs className="productId__img" product={product} /> */}
+          <SliderImgs product={product} />
         </div>
         
         <div className="info">
-          <ProductIdInfo className="productId__info" product={product} />
+          {/* <ProductIdInfo className="productId__info" product={product} /> */}
+          <ProductIdInfo  product={product} />
         </div>
          
        
       </article>
       
         <div className="productId__footer">
-          <SimilarProducts
-            className="productId__similars"
+        <h2 className='h2'> Similar Products</h2>
+        <SimilarProducts
+          
             categoryId={product?.categoryId}
             currentId={id}
           />
+          
         </div>
 
       

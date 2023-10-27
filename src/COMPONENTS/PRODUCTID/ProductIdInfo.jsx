@@ -30,8 +30,8 @@ const ProductIdInfo = ({ product }) => {
           <span> $ {product?.price}</span>
         </div>
 
-          <div className="quantyti__count">
-              <span> Quantity</span>
+          <div className="container__quantity">
+              <span className="quantity__label"> Quantity</span>
           
               <div className="container__button"> {/* div del contadoor */}
                 <button className="button__count" onClick={handleMinus}> - </button>
@@ -42,9 +42,13 @@ const ProductIdInfo = ({ product }) => {
       </div>
          
           <button className="button__cart">
-            add to cart <i className="bx bx-cart"></i>
+            add to cart <span>  </span>
+            <i className="bx  bx-tada">.</i>
+            <i className="bx bx-cart bx-tada"></i>
+            <i className="bx  bx-tada"> .</i>
           </button>
         
+         
           </article>
      
     </section>

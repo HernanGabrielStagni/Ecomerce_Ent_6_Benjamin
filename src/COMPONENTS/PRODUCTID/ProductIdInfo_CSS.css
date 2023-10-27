@@ -1,6 +1,6 @@
 
 .container_gral{
-background-color: red;
+/* background-color: rgb(231, 116, 116); */
 padding: .5em;
 /* height: 50vh; */
 min-width: 280px;
@@ -11,7 +11,7 @@ min-width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: .5em;
     gap: 1em;
     height: 100%;
@@ -45,59 +45,74 @@ font-size: 1rem;
 
 .container__price-quantity{
     width: 100%;
-    background-color: rgb(25, 17, 33);
+    /* background-color: rgb(25, 17, 33); */
     display: flex;
+    gap: 2em;
 }
 
 
 .price-value{
-background-color: rgb(226, 224, 57);  
-display: grid;  
+/* background-color: rgb(226, 224, 57);   */
+display: grid;
+color: rgb(24, 24, 24);
+justify-content: center;
+align-content: center;
+
 font-weight: 700;
+font-size: 1.2rem;
 width: 40%;
 }
 /*contiene el titulo quantyfi y los botones del counter*/
 
-.quantyti__count{
+.container__quantity{
 display: grid;
 justify-content:center;
 width: 40%;
-background-color: rgb(177, 169, 169);
-gap: 1em;
+/* background-color: rgb(177, 169, 169); */
+gap: .5em;
 padding: 1em;
 }
 
-.quantyti__count span{
-    background-color: rebeccapurple;
+.quantity__label{
+    /*background-color: rebeccapurple; */
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /*contiene los botones del counter*/
 .container__button{
-    background-color: red;
+    /* background-color: red; */
 display: flex;
 justify-content: center;
+
 gap: .5em;
 
 }
 
 
 .container__button button{
-font-size: 2rem;
+font-size: 1rem;
 aspect-ratio: 3;
 }
 
 .container__button span{
-    font-size: 2rem;
+    /* background-color: aqua; */
+    font-size: 1.5rem;
     aspect-ratio: 3;
     }
     
 
 .button__cart{
     width: 100%;
-    background-color: rgb(207, 124, 85);
+    background-color: rgb(203, 105, 59);
     padding: .3em;
     font-size: 2rem;
 }
 
+.product__img-1{
+    opacity:1;
+}
+
+.product__img-2{
+    opacity:0;
+}
