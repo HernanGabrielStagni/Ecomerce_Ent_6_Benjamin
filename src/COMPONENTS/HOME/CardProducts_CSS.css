@@ -71,18 +71,21 @@ transition: opacity 200ms ;
     font-size: .9 rem;
     font-weight: 700;
     margin-bottom: .3em; 
-    color: gray;
+    color: rgb(222, 121, 121);
+    background-color: white(241, 240, 242);
 
 
 }
 
 
-.product__title{
-    font-size: 1 rem;
+
+.cardProduct__title {
+    font-size:  1.2rem;
     font-weight: 700;
-    
+    /* background-color: rebeccapurple; */
+    border-radius: 8px;
 
-}
+   }
 
 
 .product__price{
@@ -166,3 +169,4 @@ cursor: pointer;
   100%{box-shadow: 0 0 0 8px rgba(255, 0, 0, 0)}
    
 }
+

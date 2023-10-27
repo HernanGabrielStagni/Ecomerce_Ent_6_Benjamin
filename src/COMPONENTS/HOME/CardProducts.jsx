@@ -30,7 +30,7 @@ e.stopPropagation()
       <div className='product__body'>
         <section className='product__section'>
             <h4 className='product__subtitle'>{product.brand}</h4>
-            <h3 className='product__title'>{product.title}</h3>
+            <h3 className='cardProduct__title'>{product.title}</h3>
         </section>
 
         
