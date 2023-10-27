@@ -30,6 +30,8 @@ color: rgb(82, 83, 83);
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.1;
+    background-color: rgb(222, 220, 220);
+    padding: .5em;
 }
 
 
@@ -45,9 +47,10 @@ font-size: 1rem;
 
 .container__price-quantity{
     width: 100%;
-    /* background-color: rgb(25, 17, 33); */
+    background-color: rgb(226, 226, 226);
     display: flex;
     gap: 2em;
+    
 }
 
 
@@ -81,7 +84,7 @@ padding: 1em;
 
 /*contiene los botones del counter*/
 .container__button{
-    /* background-color: red; */
+    background-color: rgb(213, 213, 213);
 display: flex;
 justify-content: center;
 
@@ -107,6 +110,9 @@ aspect-ratio: 3;
     background-color: rgb(203, 105, 59);
     padding: .3em;
     font-size: 2rem;
+    border: transparent;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 2px rgb(172, 172, 172);
 }
 
 .product__img-1{
