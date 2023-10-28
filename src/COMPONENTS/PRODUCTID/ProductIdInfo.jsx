@@ -26,8 +26,9 @@ const ProductIdInfo = ({ product }) => {
 
       <div className="container__price-quantity">
         <div className="price-value">
-          <span>Price : </span>
-          <span> $ {product?.price}</span>
+          <span  className="price_label">Price : </span>
+          <span className="price_signo">$<span className="price_price"> {product?.price}</span> </span>
+          
         </div>
 
           <div className="container__quantity">
@@ -43,9 +44,12 @@ const ProductIdInfo = ({ product }) => {
          
           <button className="button__cart">
             add to cart <span>  </span>
-            <i className="bx  bx-tada">.</i>
+            <i className="bx  bx-tada">..</i>
             <i className="bx bx-cart bx-tada"></i>
-            <i className="bx  bx-tada"> .</i>
+            <i className="bx  bx-tada">..</i>
+
+            {/*<i className="bx  bx-trash bx-tada">...........+</i> tachito de basura*/}
+            
           </button>
         
          

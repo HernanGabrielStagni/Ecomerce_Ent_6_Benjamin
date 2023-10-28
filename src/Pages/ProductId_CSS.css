@@ -9,7 +9,7 @@ padding:  .5em;
 
 .h2{
     /* background-color: red; */
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 2px  2px  3px  rgb(107, 105, 105);
 }
 .productId__header{
@@ -30,9 +30,9 @@ padding:  .5em;
     display: flex;
     justify-content: center;
     /* background-color: red; */
-width: 100%;
-min-width: 280px;
-/* height: 50%; */
+    width: 100%;
+   min-width: 280px;
+
 }
 
 
@@ -40,7 +40,7 @@ min-width: 280px;
 .info{
     display: flex;
     justify-content: center;
- width: 50%;  
+ width: 100%;  
  min-width: 220px;
  /* background-color: rgb(55, 205, 35); */
 
@@ -50,3 +50,28 @@ min-width: 280px;
 .productId__footer{
 margin-top: 2em;
 }
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media (min-width: 576px) {
+ 
+.slider{
+    background-color: rgb(216, 132, 36);
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    width: 100%;
+}
+
+
+.info{
+    background-color: rgb(216, 132, 36); 
+ width: 100%;  
+  /* background-color: rgb(55, 205, 35); */
+}
+ 
+}
+

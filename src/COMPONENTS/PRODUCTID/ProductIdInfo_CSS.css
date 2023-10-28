@@ -20,11 +20,30 @@ min-width: 280px;
 }
 
 .product__brand{
-font-size: 1rem;
-font-weight: 6s00;
+font-size: 1.2rem;
+font-weight: 700;
 color: rgb(222, 121, 121);
 background-color: white;
 }
+/*****************************/
+.price_label{
+color: blue;
+}
+
+
+.price_signo{
+color:blueviolet;
+font-weight: 700;
+}
+
+
+.price_price{
+color: rgb(220, 10, 10);
+}
+
+
+/**************************/
+
 
 /*ojo que me esta manejando el card product y no se porque*/
 .product__title{
@@ -48,7 +67,7 @@ font-size: 1rem;
 
 .container__price-quantity{
     width: 100%;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(216, 213, 213);
     display: flex;
     gap: 2em;
     
@@ -63,7 +82,7 @@ justify-content: center;
 align-content: center;
 
 font-weight: 700;
-font-size: 1.2rem;
+font-size: 1.3rem;
 width: 40%;
 }
 /*contiene el titulo quantyfi y los botones del counter*/
@@ -74,13 +93,15 @@ justify-content:center;
 width: 40%;
 /* background-color: rgb(177, 169, 169); */
 gap: .5em;
-padding: 1em;
+margin-top: .5em;
+
 }
 
 .quantity__label{
     /*background-color: rebeccapurple; */
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 /*contiene los botones del counter*/
@@ -88,15 +109,23 @@ padding: 1em;
     background-color: rgb(213, 213, 213);
 display: flex;
 justify-content: center;
-
+margin-bottom: 1em;
 gap: .5em;
 
 }
 
+/* botones del "+" y el "-"  */
+.button__count{
+  /* background-color: aqua; */
+  width: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: transparent;
+  box-shadow: 2px 2px 2px 3px rgb(65, 64, 64);
 
-.container__button button{
-font-size: 1rem;
-aspect-ratio: 3;
+
 }
 
 .container__button span{
