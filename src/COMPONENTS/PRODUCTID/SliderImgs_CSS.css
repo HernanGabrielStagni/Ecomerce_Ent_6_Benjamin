@@ -16,9 +16,24 @@ min-width: 280px;
   
     /* background-image: cover; */
     /* background-color: rgb(215, 182, 47); */
-    padding: 1em;
+    padding: 8em;
     /* height:70vh;  */
     aspect-ratio: 1; 
     /* max-height: 80vh; */
 
+}
+
+
+@media (min-width: 800px) {
+    
+.img{
+  
+    /* background-color: rgb(215, 182, 47); */
+    padding: 1em;
+    /* height:70vh;  */
+    aspect-ratio: 1.5; 
+    /* max-height: 80vh; */
+
+}
+    
 }

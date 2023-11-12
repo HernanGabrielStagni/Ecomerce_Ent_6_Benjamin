@@ -7,3 +7,17 @@
     border-radius: 8px;
 }
 
+
+@media (min-width: 800px) {
+    .card__similarProducts{
+        background-color: rgb(222, 208, 208);
+        padding: 1em;
+        gap: 1em;
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        border-radius: 8px;
+    }
+    
+    
+}
